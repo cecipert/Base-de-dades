@@ -1,0 +1,21 @@
+Exercici 1
+Crea una base relacional d’exemple utilitzant un document de text o a mà. Dissenya-la perquè contingui les següents taules, i estableix les relacions que consideris necessàries entre elles:
+Defineix les propietats de les relacions (1:1, 1:n, n:n), i crea algunes de les variables que podrien contenir, per exemple:
+
+Tablas (el primer atributo es la clave primaria): 
+COMPRA (IDCompra, fecha)
+ESTABLECIMIENTO (IDEstablecimiento, Nombre, Localizacion, Superficie)
+TRABAJADOR (IDTrabajador, Turno)
+CLIENTE (IDCliente, Descuento)
+PRODUCTO (IDProducto, Descripcion)
+TIPOPROD (IDTipoProd, DescripTipo)
+PERSONA (DNI, Apellido, Nombre, Domicilio, Telefono)
+
+Relaciones:
+TrabajaEn: entre TRABAJADOR y ESTABLECIMIENTO: N-1
+CompraEn, entre CLIENTE y ESTABLECIMIENTO: N-1
+Es, entre TRABAJADOR y PERSONA: 1-1
+Es2, entre CLIENTE y PERSONA: 1-1
+Es3, entre PRODUCTO y TIPOPROD: N-1
+Compra, entre CLIENTE y COMPRA: 1-N
+Incluye, entre COMPRA y PRODUCTO: M-N
